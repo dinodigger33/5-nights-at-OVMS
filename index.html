@@ -1,1 +1,41 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Five Nights at Winston's — Inspired</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="status">
+      <span id="night">Night 1</span>
+      <span id="time">12:00 AM</span>
+      <span id="power">Power: 100%</span>
+    </div>
 
+    <div id="controls">
+      <button data-cam="A1">Cam A1</button>
+      <button data-cam="A2">Cam A2</button>
+      <button data-cam="B1">Cam B1</button>
+      <button data-cam="B2">Cam B2</button>
+      <button id="leftDoor">Left Door</button>
+      <button id="rightDoor">Right Door</button>
+      <button id="mute">Mute</button>
+    </div>
+  </div>
+
+  <canvas id="game" width="960" height="540"></canvas>
+
+  <!-- Audio (replace with your own files in assets/) -->
+  <audio id="hum" src="assets/ambience_hum.mp3" loop></audio>
+  <audio id="camera" src="assets/camera_switch.mp3"></audio>
+  <audio id="door" src="assets/door_toggle.mp3"></audio>
+  <audio id="alert" src="assets/alert.mp3"></audio>
+  <audio id="lose" src="assets/jumpscare.mp3"></audio>
+  <audio id="win" src="assets/chime.mp3"></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
