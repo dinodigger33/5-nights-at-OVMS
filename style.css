@@ -1,1 +1,49 @@
-
+/* style.css */
+:root {
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: #0b0d12;
+  color: #c8d1e8;
+  font-family: system-ui, sans-serif;
+}
+#ui {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+  pointer-events: none;
+}
+#status, #controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  pointer-events: auto;
+}
+#status span {
+  background: rgba(255,255,255,0.06);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+#controls button {
+  padding: 8px 12px;
+  background: #131722;
+  color: #eaf0ff;
+  border: 1px solid #2a3245;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#controls button:active {
+  transform: translateY(1px);
+}
+#game {
+  display: block;
+  margin: 80px auto 24px;
+  border: 2px solid #2a3245;
+  border-radius: 8px;
+  background: #05070b;
+}
